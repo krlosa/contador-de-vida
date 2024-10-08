@@ -1,0 +1,37 @@
+:root{
+    --tamanho-btn: 300px;
+    --largura-btn: 300px;
+}
+
+
+body{
+    height: 100vh;
+}
+
+#app{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#btn1, #contador1{
+    background-color: brown;
+    height: var(--tamanho-btn);
+    width: var(--largura-btn);
+}
+
+#menu{
+    display: flex;
+    height: 50px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn2, #contador2{
+    background-color: aqua;
+    height: var(--tamanho-btn);
+    width: var(--largura-btn);
+}
