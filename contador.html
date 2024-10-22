@@ -1,42 +1,63 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
-    <title>Contador</title>
-</head>
-<body>
-    <main id="app">
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Dividindo a Tela - Verticalmente</title>  
+<style>  
+    body, html {  
+        height: 100%;  
+        margin: 0;  
+        display: flex;  
+        flex-direction: column;  
+    }  
+    .upper-half, .lower-half {  
+        flex: 1;  
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+        color: #fff;  
+        font-size: 24px;  
+    }  
+    .upper-half {  
+        background-color: #3498db;  
+    }  
+    .lower-half {  
+        background-color: #2ecc71;  
+    }  
+    .content {  
+        text-align: center;  
+    }  
+</style>  
+</head>  
+<body>  
 
+<div class="upper-half">  
+    <div class="content">  
+        <h2>Parte Superior</h2>  
+        <p>Aqui vai o conteúdo da parte superior da tela.</p> 
+        <div id="vida-jogador1">  
+            <h2>Jogador 1</h2>  
+            <button onclick="diminuirVida('vida-jogador1')">-</button>  
+            <span id="contador-jogador1">20</span>  
+            <button onclick="aumentarVida('vida-jogador1')">+</button>  
+        </div>   
+    </div>  
+    
+</div>  
 
+<div class="lower-half">  
+    <div class="content">  
+        <h2>Parte Inferior</h2>  
+        <p>E aqui vai o conteúdo da parte inferior da tela.</p>
+        <div id="vida-jogador2">  
+            <h2>Jogador 2</h2>  
+            <button onclick="diminuirVida('vida-jogador2')">-</button>  
+            <span id="contador-jogador2">20</span>  
+            <button onclick="aumentarVida('vida-jogador2')">+</button>  
+        </div>  
+    </div>  
+</div>  
 
-        <div id="contador1">
-            <button>+</button>
-            <p>40</p>
-            <button>-</button>
-        </div>
-
-        <div id="menu">
-            <h1>Menu de opções</h1>
-        </div>
-
-        <div id="contador2">
-            <button>+</button>
-            <p>40</p>
-            <button>-</button>
-        </div>
-        
-        <!-- <h1>Escolha quantidade de jogadores</h1>        
-
-        <div>
-            <button onclick="" id="btn1">2 Jogadores</button>
-        </div>
-        <div>
-            <button onclick="" id="btn2">4 Jogadores</button>
-        </div> -->
-    </main>
-    <script src="./contador.js"></script>
-</body>
+</body>  
 </html>
