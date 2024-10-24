@@ -4,9 +4,7 @@
 }
 
 
-body{
-    height: 100vh;
-}
+
 
 #app{
     min-height: 100%;
@@ -14,6 +12,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 10%;
 }
 
 #btn1, #contador1{
